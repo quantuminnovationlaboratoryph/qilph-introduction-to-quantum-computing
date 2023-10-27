@@ -1,6 +1,6 @@
-# Welcome to QCS Project's Introduction to Quantum Computing Web Book
+# QCS Project's Introduction to Quantum Computing Web Book
 
-This web book was created by QCS Project's team.
+This web book was created by DOST-ASTI's QCS Project team.
 
 ```{tableofcontents}
 ```
