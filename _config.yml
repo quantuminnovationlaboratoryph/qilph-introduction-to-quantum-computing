@@ -25,7 +25,7 @@ execute:
   stderr_output: show # One of 'show', 'remove', 'remove-warn', 'warn', 'error', 'severe'
 
 repository:
-  url: https://github.com/executablebooks/jupyter-book  # Online location of your book
+  url: https://github.com/quantuminnovationlaboratoryph/qilph-introduction-to-quantum-computing  # Online location of your book
   path_to_book: docs  # Optional path to your book, relative to the repository root
   branch: main  # Which branch of the repository should be used when creating links (optional)
 
