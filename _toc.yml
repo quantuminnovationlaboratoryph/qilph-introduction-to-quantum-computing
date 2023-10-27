@@ -1,0 +1,17 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+parts:
+  - caption: Chapters
+    numbered: true
+    chapters:
+    - file: content/chapter-01/chapter-01
+    - file: content/chapter-02/chapter-02
+    - file: content/chapter-03/chapter-03
+    - file: content/chapter-04/chapter-04
+    - file: content/chapter-05/chapter-05
+    - file: content/chapter-06/chapter-06
+    - file: content/chapter-07/chapter-07
+    - file: content/chapter-08/chapter-08
