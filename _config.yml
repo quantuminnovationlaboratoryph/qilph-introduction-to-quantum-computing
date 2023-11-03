@@ -10,8 +10,8 @@ latex:
   latex_documents:
     targetname: book.tex
 
-bibtex_bibfiles:
-  - references.bib
+#bibtex_bibfiles:
+#  - references.bib
 
 execute:
   execute_notebooks: "off" # Whether to execute notebooks at build time. Must be one of ("auto", "force", "cache", "off")
