@@ -7,6 +7,7 @@ parts:
   - caption: Chapters
     numbered: true
     chapters:
+    - file: content/chapter-00/chapter-00
     - file: content/chapter-01/chapter-01
     - file: content/chapter-02/chapter-02
     - file: content/chapter-03/chapter-03
