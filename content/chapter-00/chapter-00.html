@@ -1,0 +1,637 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>1. Quantum Computing: A Fast-Emerging Field and Its Potential Impact &#8212; Introduction to Quantum Computing</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
+  <script src="../../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'content/chapter-00/chapter-00';</script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="2. Introduction to Classical Computing" href="../chapter-01/chapter-01.html" />
+    <link rel="prev" title="QCS Project’s Introduction to Quantum Computing Web Book" href="../../intro.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../../intro.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/qil-logo.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../../_static/qil-logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../intro.html">
+                    QCS Project’s Introduction to Quantum Computing Web Book
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Chapters</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">1. Quantum Computing: A Fast-Emerging Field and Its Potential Impact</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter-01/chapter-01.html">2. Introduction to Classical Computing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter-02/chapter-02.html">3. Mathematical Foundation of Quantum Computing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter-03/chapter-03.html">4. Quantum Mechanics for Quantum Computing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter-04/chapter-04.html">5. Introduction to Quantum Computing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter-05/chapter-05.html">6. Quantum Algorithms and Their Advantages Over Classical Counterparts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter-06/chapter-06.html">7. Software Programming for Quantum Computation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter-07/chapter-07.html">8. COARE and ASTI’s Quantum Circuit Simulation Project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter-08/chapter-08.html">9. Current Use Cases for Quantum Computing in the Noisy Intermediate-Scale Quantum Era</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/quantuminnovationlaboratoryph/qilph-introduction-to-quantum-computing" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/quantuminnovationlaboratoryph/qilph-introduction-to-quantum-computing/issues/new?title=Issue%20on%20page%20%2Fcontent/chapter-00/chapter-00.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/content/chapter-00/chapter-00.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Quantum Computing: A Fast-Emerging Field and Its Potential Impact</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#content">1.1. Content</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">1.2. Introduction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-quantum-computing">1.3. What is quantum computing?</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#classical-vs-quantum-computing">1.3.1. Classical vs. quantum computing</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-brief-history-of-computers">1.3.2. A brief history of computers</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-bit-of-quantum-mechanics-for-computing">1.3.3. A bit of quantum mechanics for computing</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quantum-circuits">1.4. Quantum circuits</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quantum-algorithms">1.5. Quantum algorithms</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#asti-and-quantum-computing">1.6. ASTI and quantum computing</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#potential-use-cases-of-quantum-computing">1.7. Potential use cases of quantum computing</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="quantum-computing-a-fast-emerging-field-and-its-potential-impact">
+<h1><span class="section-number">1. </span>Quantum Computing: A Fast-Emerging Field and Its Potential Impact<a class="headerlink" href="#quantum-computing-a-fast-emerging-field-and-its-potential-impact" title="Permalink to this heading">#</a></h1>
+<p><em>by Jul Jon R. General</em></p>
+<section id="content">
+<h2><span class="section-number">1.1. </span>Content<a class="headerlink" href="#content" title="Permalink to this heading">#</a></h2>
+<p><span class="xref myst">Introduction</span>  | 
+<span class="xref myst">What is quantum computing?</span>  | 
+<span class="xref myst">Quantum circuits</span>  | 
+<span class="xref myst">Quantum algorithms</span>  | 
+<span class="xref myst">Potential use of quantum computing</span>  | </p>
+<p><a id='Introduction'></a></p>
+</section>
+<section id="introduction">
+<h2><span class="section-number">1.2. </span>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading">#</a></h2>
+<hr class="docutils" />
+<p>Quantum computing is an emerging technology that is somehow gaining the attention of countries all over the world due to its potential impact to various industries.</p>
+<p>The Advanced Science and Technology Institute (ASTI) is spearheading research on quantum computing as part of its mandate to strengthen and modernize the information and communications technology and microelectronics industry in the country.</p>
+<p>ASTI undertakes research and development activities in this area through partnerships with local and foreign institutions that share the same goals for the Philippines. These partnerships are established through formal agreements in the form of Memorandum of Understanding or Agreement.</p>
+<p><a id='Quantum_computing'></a></p>
+</section>
+<section id="what-is-quantum-computing">
+<h2><span class="section-number">1.3. </span>What is quantum computing?<a class="headerlink" href="#what-is-quantum-computing" title="Permalink to this heading">#</a></h2>
+<hr class="docutils" />
+<section id="classical-vs-quantum-computing">
+<h3><span class="section-number">1.3.1. </span>Classical vs. quantum computing<a class="headerlink" href="#classical-vs-quantum-computing" title="Permalink to this heading">#</a></h3>
+<p>Let us first introduce some terms that will be frequently mentioned in this material. When we say <strong>classical physical systems</strong>, we refer to  physical systems that behave according to classical physics. The behavior of our common computing devices such as cellphones, laptops, and even the more powerful computers such as servers, are built upon the laws of classical physics. Classical physical systems are about the macroscale of things, such as transistors, processors, or resistors. The type of computing supported by classical physical systems is called <strong>classical computing</strong>.</p>
+<p>On the other hand, <strong>quantum physical systems</strong> are physical systems that behave according to the laws of quantum mechanics. These systems exhibit unique physical phenomena that cannot be explained by the classical laws of physics. Quantum physical systems are in the nanoscale of things (or even much smaller) like the size of electrons and photons. The type of computing supported by quantum physical systems is referred to as <strong>quantum computing</strong>.</p>
+<p>There is a growing buzz around quantum computing and just like other emerging fields of technologies, academic and industry experts have their say on the field. CalTech Professor John Preskill and Google CEO Sundar Pichai describe quantum computing as a form of computing that is fundamentally different compared to classical computing since it is based on quantum principles. It is considered a significant technological advancement that has the potential to be highly impactful just like artificial intelligence.</p>
+</section>
+<section id="a-brief-history-of-computers">
+<h3><span class="section-number">1.3.2. </span>A brief history of computers<a class="headerlink" href="#a-brief-history-of-computers" title="Permalink to this heading">#</a></h3>
+<p>Our civilization has made remarkable progress in computing, from the humble abacus of 27000 BC to the vacuum tube computers in the 1950s and to the present day generation of computers. (See the timeline of computers below.) At each pivotal point in the computer history, crucial discoveries paved the way for the emergence of new breeds of computers.</p>
+<p><img alt="image.png" src="content/chapter-00/attachment:d6ec1f77-36ed-40b7-8b5b-d3aa16f5b1b6.png" /></p>
+<p>First, there was thermodynamics that lead to the invention of steam-powered mechanical engines. Based from the working principles of these early engines, mechanical computers were built that can perform very specific tasks.</p>
+<p>Then, electromagnetism was discovered. This lead to the invention of vacuum tubes-based computers which were the size of a typical classroom.</p>
+<p>Then came the invention of the theory of computation. This enabled better understanding of the nature of computation, the complexity of problems, and the metrics for the objective evaluation of computer algorithms.</p>
+<p>Then quantum physics emerged in the early 1900s. This lead to the miniaturization of computers through the use of transistors instead of the old and failure-prone vacuum tubes.</p>
+<p>In the 1970s to 1990s, investigations on the application of quantum physics to information theory was initiated leading to the establishment of quantum information theory. This field focuses on the deeper understanding of the nature of encoding, storing, and manipulating information when using quantum physical systems.</p>
+<p>Eventually, quantum computing spun out of quantum information theory. The field of quantum computing is more concerned about the understanding of the nature of computation when using quantum physical systems as a computer and as information storage device. Companies like IBM, Microsoft, and D-Wave began developing physical prototypes of quantum computers.</p>
+<p>At present, these prototypes of quantum computers are by nature sensitive and very costly to build and maintain. And so, access to these computers are only made available through cloud computing platforms. Google, Microsoft, and IBM are providing limited public access to their prototypes in a bid to speed up the adoption of quantum computers during the pre-commercialization stage of the technology.</p>
+</section>
+<section id="a-bit-of-quantum-mechanics-for-computing">
+<h3><span class="section-number">1.3.3. </span>A bit of quantum mechanics for computing<a class="headerlink" href="#a-bit-of-quantum-mechanics-for-computing" title="Permalink to this heading">#</a></h3>
+<p>As stated above, quantum computing is fundamentally different from the classical computing. To understand the difference, it is crucial to grasp the behaviors of quantum computing systems, which are grounded in quantum principles that diverge significantly from those governed by classical physics.</p>
+<p>The smallest unit of information in classical digital computing is the <strong>binary digit or bit</strong>. The laptops you are using right now typically use 64 bits in addressing data to be stored in the storage disk. Each bit of information can hold either of the two exclusive states—denoted 0 or 1—used to represent a binary information.</p>
+<p>The information that can be stored in the classical physical systems can be controlled to exist in either the logical state 0 or the logical state 1 but not both. These states 0 and 1 are mutually exclusive states which imply that if a bit is in the state 0, it remains unequivocally in the state 0, and vice versa for the logical state 1.</p>
+<p>In quantum computing, the basic unit of information is the <strong>quantum digital bit or qubit</strong>. Similar to the classical bit, a qubit can be made represent a state 0 or 1. But a qubit can do more than that.</p>
+<p>The two pure states in a qubit are denoted <span class="math notranslate nohighlight">\(| 0 \rangle\)</span> and <span class="math notranslate nohighlight">\(| 1 \rangle\)</span> instead of 0 and 1. A qubit can be physically manipulated so that it can designate an unknown state which can be a mixture of the states <span class="math notranslate nohighlight">\(| 0 \rangle\)</span> and <span class="math notranslate nohighlight">\(| 1 \rangle\)</span>. This physical phenomenon is referred to as the <strong>superposition of all the possible states</strong> of a quantum physical system. Thus, a qubit <span class="math notranslate nohighlight">\(| q \rangle\)</span> prior to a measurement stores the following information
+$<span class="math notranslate nohighlight">\(
+| q \rangle = \alpha | 0 \rangle + \beta | 1 \rangle
+\)</span><span class="math notranslate nohighlight">\(
+where \)</span>\alpha<span class="math notranslate nohighlight">\( and \)</span>\beta<span class="math notranslate nohighlight">\( are in general complex numbers. From this equation it becomes clear that a qubit cannot unequivocally be just a \)</span>| 0 \rangle<span class="math notranslate nohighlight">\( (or \)</span>| 1 \rangle<span class="math notranslate nohighlight">\() unless \)</span>\alpha = 1<span class="math notranslate nohighlight">\( and \)</span>\beta = 0<span class="math notranslate nohighlight">\( (respectively, \)</span>\alpha = 0<span class="math notranslate nohighlight">\( and \)</span>\beta = 1$).</p>
+<p>In addition to the phenomenon of superpositioning of states, quantum systems can also be physically manipulated such that two individual states become correlated with each other. Correlated states of quantum physical systems cannot be described independently as the collection of states of the individual quantum physical systems. Quantum physical systems that have correlated states are said to be <strong>entangled</strong>. Entanglement is not observed in classical physical systems.</p>
+<p>When used in computing, the state of physical qubits are said to be in an entangled state or the qubits are said to be entangled qubits. Entangled states are harnessed in computing as the outcomes of measuring a specific porperty of any of the entangled qubits dictate the value of the corresponding property of the other entangled qubits, even when these qubits are physically distant from one another. Quantum entanglement allows two or more qubits to share a single quantum state, which opens up new possibilities for computing power and cryptography.</p>
+<p>Another quantum physical phenomenon that is found to be useful in computing is the idea of <strong>quantum interference</strong>. With quantum interference, qubits can be intentionally manipulated so that their states will constructively or destructively interfere with each other. This physical interference between the states of qubits can be used to direct the quantum computer into the state that corresponds to our desired solution.</p>
+<p>A typical algorithm targeted for a quantum computer requires some level of cleverness from the algorithm designer such that constructive and destructive interference will increase the probability of finding the qubits in the desired state corresponding to the solution to the computing problem at hand.</p>
+<p><strong><em>The physical phenomena of quantum superposition, quantum entanglement, and quantum interference in the states of qubits makes or quantum computing fundamentally unique from classical computing.</em></strong></p>
+<p><a id='Quantum_circuits'></a></p>
+</section>
+</section>
+<section id="quantum-circuits">
+<h2><span class="section-number">1.4. </span>Quantum circuits<a class="headerlink" href="#quantum-circuits" title="Permalink to this heading">#</a></h2>
+<hr class="docutils" />
+<p>Analogous to classical computing, the circuit model is also used in quantum computing. A <strong>quantum circuit</strong> represents a sequence of qubit initializations, quantum gates, and measurements. Similar to a classical circuit, quantum computation advances from the left to the right of the quantum circuit. See example quantum circuit below. Each vertical line in the circuit represents a single time step of computation.</p>
+<p>To the left-most end of the circuit, we find the <strong>input logical qubits</strong> prepared to predetermined values as well as the <strong>input classical bits</strong>. The values of the qubits evolve according to the sequence of quantum gates acted on one or more of the qubits. The <strong>quantum gates</strong> correspond to quantum operations acting on quantum states. These operations bring about quantum superposition, entanglement, and/or induce interference in the affected the qubit states. The result of the quantum computation is determined by performing a so called <strong>measurement operation</strong> on the final states of the qubits. Being the last step in a quantum circuit, measurements are typically located at the rightmost end of the circuit.</p>
+<p>Special forms of quantum circuits aimed at solving particular problems are called <strong>quantum algorithms</strong>. These algorithms represent specific sequences of circuit initializations, operations, and measurements aimed to execute directives  on a quantum computer.</p>
+<p>As observed, the quantum circuit computing model closely resembles its classical counterpart, except that quantum operations relate to physical phenomena that are not available in classical operations.</p>
+<p><img alt="image.png" src="content/chapter-00/attachment:3c7541b7-7f45-4a09-86e1-32591b03481a.png" /></p>
+<p><a id='Quantum_algorithms'></a></p>
+</section>
+<section id="quantum-algorithms">
+<h2><span class="section-number">1.5. </span>Quantum algorithms<a class="headerlink" href="#quantum-algorithms" title="Permalink to this heading">#</a></h2>
+<hr class="docutils" />
+<p>Algorithm designers need to be clever enough to come up with a sequence of physical operations on the qubits such that the final state of the qubits will correspond to the desired solution to a computing problem. These quantum operations may involve quantum superposition, quantum entanglement, and/or quantum interference effects on qubit states. Often, quantum algorithms are used in conjunction with classical algorithms since large-scale and fault-tolerant quantum computers are yet to be built.</p>
+<p>What programming languages can we use to write software programs targeted to run on quantum computers? What software development frameworks are there for quantum computing?</p>
+<p>IBM has cloud-based platform called IBM Quantum Experience that the public can access for free but for a limited number of qubits—5 to 7 qubits—depending on the quantum device where you want to run a quantum algorithm. IBM has also developed its own software programming framework for writing programs targeted to run on quantum computers called <strong>Qiskit</strong>. Qiskit has a well-written documentation available at <span class="xref myst">qiskit.org</span>.</p>
+<p>An image of IBM’s recent prototype of a quantum processor is shown on the left photo below. A simple Qiskit instruction based on the Python programming language is displayed on the right side. Below it is th corresponding quantum circuit for the Qiskit instruction. Thus, one can write software for quantum processors in Python with IBM’s Qiskit framework.</p>
+<p><img alt="image.png" src="content/chapter-00/attachment:597b3d16-fbc8-4a06-adb7-0274545f5d72.png" /></p>
+<p>Microsoft also has its own cloud-based quantum computing service known as the <strong>Azure</strong> cloud platform. In this platform, one can have access to Microsoft’s partners’ prototype quantum processors for a limited number of qubits. Microsoft also has their own quantum development kit called the Q# programming language that can be integrated with Python.</p>
+<p>Given that quantum computers have yet to become widespread, many researcher opt to execute their quantum programs on quantum computers simulators using classical computers. However, this approach is limited to a small number of qubits, as the execution of simulated quantum circuits are on both time and space intensive on classical machines.</p>
+<p><a id='ASTI_and_quantum_computing'></a></p>
+</section>
+<section id="asti-and-quantum-computing">
+<h2><span class="section-number">1.6. </span>ASTI and quantum computing<a class="headerlink" href="#asti-and-quantum-computing" title="Permalink to this heading">#</a></h2>
+<hr class="docutils" />
+<p>As part of its initiative to explore and innovate on advanced computing infrastructure, ASTI embarked on a two-year quantum computing project beginning May 2022. The project aims to make quantum circuit simulators more accessible to ASTI’s partner agencies by integrating quantum simulation frameworks like Qiskit on ASTI’s High-Performance Computing Facility.</p>
+<p>ASTI hopes that the project will kickstart local research activities in quantum computing by providing users basic computing tools for quantum circuit simulation.</p>
+<p><img alt="image.png" src="content/chapter-00/attachment:e43df3b1-126f-480f-8476-94ff4a0a06cb.png" /></p>
+<p><a id='Potential_use_of_quantum_computing'></a></p>
+</section>
+<section id="potential-use-cases-of-quantum-computing">
+<h2><span class="section-number">1.7. </span>Potential use cases of quantum computing<a class="headerlink" href="#potential-use-cases-of-quantum-computing" title="Permalink to this heading">#</a></h2>
+<hr class="docutils" />
+<p>We would like to emphasize that quantum computing is not applicable to all computing problems. It is not useful in writing PowerPoint presentations or Word documents. It is not useful in writing emails. However, it is potentially useful is solving hard to compute problems. These problems are those which have very large solution spaces that takes so much time to identify the appropriate solution to a problem classical computers.</p>
+<p>Perhaps the most obvious such problem is the identification of potential drugs in medicine research. Quantum computing could potentially accelerate the discovery of new drugs by simulating the behavior of molecules and predicting their interactions with target proteins. Quantum computing algorithms such as the Variational Quantum Eigensolver and Quantum Phase Estimation are particularly well-suited to these tasks.</p>
+<p>Quantum computing could help researchers understand how proteins fold and how they interact with each other, which is crucial for understanding diseases and developing new treatments. The ability to simulate large biomolecules using quantum computers could provide insights into the structure and function of proteins that are difficult or impossible to obtain using classical computers.</p>
+<p>Quantum computing could also improve medical imaging by optimizing image processing algorithms and enabling more accurate and efficient simulations of physical systems, such as the behavior of photons in biological tissues. Overall, quantum computing has the potential to transform medicine research by enabling faster and more accurate simulations of complex biological systems, leading to more effective treatments and better outcomes for patients.</p>
+<p>In logistics, quantum computing can have a significant impact on transportation, supply chain management, and optimization. It can help optimize complex routing problems, such as determining the most efficient route for multiple vehicles to deliver packages to different destinations. It can also improve supply chain management by optimizing inventory management and distribution strategies, and by detecting and mitigating risks in the supply chain.</p>
+<p>Quantum computing can help optimize investment portfolios using the annealing method for finding the minimum energy state of a physical system. This can help investors make better investment decisions and improve returns on investment.</p>
+<p>In the energy sector, quantum computing has the potential to transform the sector by improving the efficiency and sustainability of energy production, distribution, and consumption. It can accelerate the discovery of new materials for use in energy production, such as solar panels and batteries. Quantum algorithms can be used to simulate the behavior of materials at the atomic and molecular scale, enabling researchers to predict their properties and performance more accurately.</p>
+<p>It can also improve climate modeling by simulating the behavior of the atmosphere and ocean at a high level of detail, enabling researchers to predict and mitigate the impacts of climate change more accurately.</p>
+<p>Quantum computing has both the potential to enhance security by improving cryptographic methods, and also poses a potential threat to current security measures by breaking classical encryption algorithms.</p>
+<p>In cryptography, it can enable the development of new cryptographic methods that are more secure against attacks by quantum computers. For example, quantum key distribution (QKD) uses the principles of quantum mechanics to transmit secure keys between parties, which cannot be intercepted or altered without detection.</p>
+<p>In cybersecurity it can also help improve cybersecurity by enabling faster and more accurate detection of security threats and vulnerabilities. Quantum machine learning algorithms can be used to analyze large datasets and identify patterns and anomalies in network traffic, which can help detect and prevent cyber attacks. It can also help in the development of new quantum-safe cryptographic methods that are resistant to attacks by both classical and quantum computers. This is important for securing sensitive data in the future as quantum computers become more powerful.</p>
+<p>Quantum computing will require specialized hardware and software to operate, so the development of new IT products is necessary to fully realize the potential of quantum computing. The development of specialized software for quantum computing is necessary to program and operate quantum computers. These include programming languages, simulators, and compilers that enable users to write and execute quantum algorithms on quantum processors.</p>
+<p>Also, the development of new quantum machine learning and artificial intelligence products will also be necessary to accelerate the development of these fields and take advantage of the unique capabilities of quantum computing.</p>
+<p>The development of all these products will enable researchers and developers to explore new applications and use cases for quantum computing, leading to new innovations and breakthroughs in science, engineering, and other fields.</p>
+<p>Thus to cope up with the potential developments of quantum computing in the Philippines, the IT education needs to be updated to include quantum computing topics and concepts. This could include adding quantum computing to existing courses such as computer architecture or algorithms, or creating new courses that focus specifically on quantum computing. Universities and educational institutions may encourage research in quantum computing through the development of new research programs and funding opportunities.</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./content/chapter-00"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  <!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../../intro.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">QCS Project’s Introduction to Quantum Computing Web Book</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../chapter-01/chapter-01.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">2. </span>Introduction to Classical Computing</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#content">1.1. Content</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">1.2. Introduction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-quantum-computing">1.3. What is quantum computing?</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#classical-vs-quantum-computing">1.3.1. Classical vs. quantum computing</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-brief-history-of-computers">1.3.2. A brief history of computers</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-bit-of-quantum-mechanics-for-computing">1.3.3. A bit of quantum mechanics for computing</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quantum-circuits">1.4. Quantum circuits</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quantum-algorithms">1.5. Quantum algorithms</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#asti-and-quantum-computing">1.6. ASTI and quantum computing</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#potential-use-cases-of-quantum-computing">1.7. Potential use cases of quantum computing</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By QCS Project Team
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>1. Introduction to Classical Computing &#8212; Introduction to Quantum Computing</title>
+    <title>2. Introduction to Classical Computing &#8212; Introduction to Quantum Computing</title>
   
   
   
@@ -65,8 +65,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'content/chapter-01/chapter-01';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="2. Mathematical Foundation of Quantum Computing" href="../chapter-02/chapter-02.html" />
-    <link rel="prev" title="QCS Project’s Introduction to Quantum Computing Web Book" href="../../intro.html" />
+    <link rel="next" title="3. Mathematical Foundation of Quantum Computing" href="../chapter-02/chapter-02.html" />
+    <link rel="prev" title="1. Quantum Computing: A Fast-Emerging Field and Its Potential Impact" href="../chapter-00/chapter-00.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -168,14 +168,15 @@ const thebe_selector_output = ".output, .cell_output"
         </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Chapters</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">1. Introduction to Classical Computing</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../chapter-02/chapter-02.html">2. Mathematical Foundation of Quantum Computing</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../chapter-03/chapter-03.html">3. Quantum Mechanics for Quantum Computing</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../chapter-04/chapter-04.html">4. Introduction to Quantum Computing</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../chapter-05/chapter-05.html">5. Quantum Algorithms and Their Advantages Over Classical Counterparts</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../chapter-06/chapter-06.html">6. Software Programming for Quantum Computation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../chapter-07/chapter-07.html">7. COARE and ASTI’s Quantum Circuit Simulation Project</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../chapter-08/chapter-08.html">8. Current Use Cases for Quantum Computing in the Noisy Intermediate-Scale Quantum Era</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter-00/chapter-00.html">1. Quantum Computing: A Fast-Emerging Field and Its Potential Impact</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">2. Introduction to Classical Computing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter-02/chapter-02.html">3. Mathematical Foundation of Quantum Computing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter-03/chapter-03.html">4. Quantum Mechanics for Quantum Computing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter-04/chapter-04.html">5. Introduction to Quantum Computing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter-05/chapter-05.html">6. Quantum Algorithms and Their Advantages Over Classical Counterparts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter-06/chapter-06.html">7. Software Programming for Quantum Computation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter-07/chapter-07.html">8. COARE and ASTI’s Quantum Circuit Simulation Project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter-08/chapter-08.html">9. Current Use Cases for Quantum Computing in the Noisy Intermediate-Scale Quantum Era</a></li>
 </ul>
 
     </div>
@@ -369,12 +370,12 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#computational-problems-and-their-inherent-hardness">1.1. Computational Problems and Their Inherent Hardness</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#models-of-computation">1.2. Models of Computation</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#circuit-model-of-computation">1.3. Circuit Model of Computation</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#boolean-algebra">1.4. Boolean Algebra</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reversible-computation">1.5. Reversible Computation</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#computational-complexity">1.6. Computational Complexity</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#computational-problems-and-their-inherent-hardness">2.1. Computational Problems and Their Inherent Hardness</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#models-of-computation">2.2. Models of Computation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#circuit-model-of-computation">2.3. Circuit Model of Computation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#boolean-algebra">2.4. Boolean Algebra</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reversible-computation">2.5. Reversible Computation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#computational-complexity">2.6. Computational Complexity</a></li>
 </ul>
             </nav>
         </div>
@@ -387,7 +388,7 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="introduction-to-classical-computing">
-<h1><a class="toc-backref" href="#id1" role="doc-backlink"><span class="section-number">1. </span>Introduction to Classical Computing</a><a class="headerlink" href="#introduction-to-classical-computing" title="Permalink to this heading">#</a></h1>
+<h1><a class="toc-backref" href="#id1" role="doc-backlink"><span class="section-number">2. </span>Introduction to Classical Computing</a><a class="headerlink" href="#introduction-to-classical-computing" title="Permalink to this heading">#</a></h1>
 <p><em>by Jul Jon R. General</em></p>
 <nav class="contents" id="contents">
 <p class="topic-title">Contents</p>
@@ -409,22 +410,22 @@ document.write(`
 <li><p>Students will be able to discuss the basic principles of classical computing, with focus on the circuit model of computing and Boolean algebra.</p></li>
 </ul>
 <section id="computational-problems-and-their-inherent-hardness">
-<h2><a class="toc-backref" href="#id2" role="doc-backlink"><span class="section-number">1.1. </span>Computational Problems and Their Inherent Hardness</a><a class="headerlink" href="#computational-problems-and-their-inherent-hardness" title="Permalink to this heading">#</a></h2>
+<h2><a class="toc-backref" href="#id2" role="doc-backlink"><span class="section-number">2.1. </span>Computational Problems and Their Inherent Hardness</a><a class="headerlink" href="#computational-problems-and-their-inherent-hardness" title="Permalink to this heading">#</a></h2>
 </section>
 <section id="models-of-computation">
-<h2><a class="toc-backref" href="#id3" role="doc-backlink"><span class="section-number">1.2. </span>Models of Computation</a><a class="headerlink" href="#models-of-computation" title="Permalink to this heading">#</a></h2>
+<h2><a class="toc-backref" href="#id3" role="doc-backlink"><span class="section-number">2.2. </span>Models of Computation</a><a class="headerlink" href="#models-of-computation" title="Permalink to this heading">#</a></h2>
 </section>
 <section id="circuit-model-of-computation">
-<h2><a class="toc-backref" href="#id4" role="doc-backlink"><span class="section-number">1.3. </span>Circuit Model of Computation</a><a class="headerlink" href="#circuit-model-of-computation" title="Permalink to this heading">#</a></h2>
+<h2><a class="toc-backref" href="#id4" role="doc-backlink"><span class="section-number">2.3. </span>Circuit Model of Computation</a><a class="headerlink" href="#circuit-model-of-computation" title="Permalink to this heading">#</a></h2>
 </section>
 <section id="boolean-algebra">
-<h2><a class="toc-backref" href="#id5" role="doc-backlink"><span class="section-number">1.4. </span>Boolean Algebra</a><a class="headerlink" href="#boolean-algebra" title="Permalink to this heading">#</a></h2>
+<h2><a class="toc-backref" href="#id5" role="doc-backlink"><span class="section-number">2.4. </span>Boolean Algebra</a><a class="headerlink" href="#boolean-algebra" title="Permalink to this heading">#</a></h2>
 </section>
 <section id="reversible-computation">
-<h2><a class="toc-backref" href="#id6" role="doc-backlink"><span class="section-number">1.5. </span>Reversible Computation</a><a class="headerlink" href="#reversible-computation" title="Permalink to this heading">#</a></h2>
+<h2><a class="toc-backref" href="#id6" role="doc-backlink"><span class="section-number">2.5. </span>Reversible Computation</a><a class="headerlink" href="#reversible-computation" title="Permalink to this heading">#</a></h2>
 </section>
 <section id="computational-complexity">
-<h2><a class="toc-backref" href="#id7" role="doc-backlink"><span class="section-number">1.6. </span>Computational Complexity</a><a class="headerlink" href="#computational-complexity" title="Permalink to this heading">#</a></h2>
+<h2><a class="toc-backref" href="#id7" role="doc-backlink"><span class="section-number">2.6. </span>Computational Complexity</a><a class="headerlink" href="#computational-complexity" title="Permalink to this heading">#</a></h2>
 </section>
 </section>
 
@@ -459,12 +460,12 @@ document.write(`
                   <!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
-       href="../../intro.html"
+       href="../chapter-00/chapter-00.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">QCS Project’s Introduction to Quantum Computing Web Book</p>
+        <p class="prev-next-title"><span class="section-number">1. </span>Quantum Computing: A Fast-Emerging Field and Its Potential Impact</p>
       </div>
     </a>
     <a class="right-next"
@@ -472,7 +473,7 @@ document.write(`
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">2. </span>Mathematical Foundation of Quantum Computing</p>
+        <p class="prev-next-title"><span class="section-number">3. </span>Mathematical Foundation of Quantum Computing</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -491,12 +492,12 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#computational-problems-and-their-inherent-hardness">1.1. Computational Problems and Their Inherent Hardness</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#models-of-computation">1.2. Models of Computation</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#circuit-model-of-computation">1.3. Circuit Model of Computation</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#boolean-algebra">1.4. Boolean Algebra</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reversible-computation">1.5. Reversible Computation</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#computational-complexity">1.6. Computational Complexity</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#computational-problems-and-their-inherent-hardness">2.1. Computational Problems and Their Inherent Hardness</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#models-of-computation">2.2. Models of Computation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#circuit-model-of-computation">2.3. Circuit Model of Computation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#boolean-algebra">2.4. Boolean Algebra</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reversible-computation">2.5. Reversible Computation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#computational-complexity">2.6. Computational Complexity</a></li>
 </ul>
   </nav></div>
 

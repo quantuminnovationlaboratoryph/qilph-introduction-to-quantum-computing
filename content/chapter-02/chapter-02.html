@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>2. Mathematical Foundation of Quantum Computing &#8212; Introduction to Quantum Computing</title>
+    <title>3. Mathematical Foundation of Quantum Computing &#8212; Introduction to Quantum Computing</title>
   
   
   
@@ -67,8 +67,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'content/chapter-02/chapter-02';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="3. Quantum Mechanics for Quantum Computing" href="../chapter-03/chapter-03.html" />
-    <link rel="prev" title="1. Introduction to Classical Computing" href="../chapter-01/chapter-01.html" />
+    <link rel="next" title="4. Quantum Mechanics for Quantum Computing" href="../chapter-03/chapter-03.html" />
+    <link rel="prev" title="2. Introduction to Classical Computing" href="../chapter-01/chapter-01.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -170,14 +170,15 @@ const thebe_selector_output = ".output, .cell_output"
         </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Chapters</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../chapter-01/chapter-01.html">1. Introduction to Classical Computing</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">2. Mathematical Foundation of Quantum Computing</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../chapter-03/chapter-03.html">3. Quantum Mechanics for Quantum Computing</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../chapter-04/chapter-04.html">4. Introduction to Quantum Computing</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../chapter-05/chapter-05.html">5. Quantum Algorithms and Their Advantages Over Classical Counterparts</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../chapter-06/chapter-06.html">6. Software Programming for Quantum Computation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../chapter-07/chapter-07.html">7. COARE and ASTI’s Quantum Circuit Simulation Project</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../chapter-08/chapter-08.html">8. Current Use Cases for Quantum Computing in the Noisy Intermediate-Scale Quantum Era</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter-00/chapter-00.html">1. Quantum Computing: A Fast-Emerging Field and Its Potential Impact</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter-01/chapter-01.html">2. Introduction to Classical Computing</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">3. Mathematical Foundation of Quantum Computing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter-03/chapter-03.html">4. Quantum Mechanics for Quantum Computing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter-04/chapter-04.html">5. Introduction to Quantum Computing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter-05/chapter-05.html">6. Quantum Algorithms and Their Advantages Over Classical Counterparts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter-06/chapter-06.html">7. Software Programming for Quantum Computation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter-07/chapter-07.html">8. COARE and ASTI’s Quantum Circuit Simulation Project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter-08/chapter-08.html">9. Current Use Cases for Quantum Computing in the Noisy Intermediate-Scale Quantum Era</a></li>
 </ul>
 
     </div>
@@ -371,19 +372,19 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objective">2.1. Learning objective</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prerequisite">2.2. Prerequisite</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#course-content">2.3. Course content</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">2.4. Introduction</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vectors">2.5. Vectors</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vector-spaces">2.6. Vector spaces</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vector-subspaces">2.7. Vector subspaces</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#inner-products">2.8. Inner products</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tensor-products">2.9. Tensor products</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#linear-transformations">2.10. Linear transformations</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#some-special-types-of-square-matrices">2.11. Some special types of square matrices</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matrix-diagonalization">2.12. Matrix diagonalization</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercises">2.13. Exercises</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objective">3.1. Learning objective</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prerequisite">3.2. Prerequisite</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#course-content">3.3. Course content</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">3.4. Introduction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vectors">3.5. Vectors</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vector-spaces">3.6. Vector spaces</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vector-subspaces">3.7. Vector subspaces</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#inner-products">3.8. Inner products</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tensor-products">3.9. Tensor products</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#linear-transformations">3.10. Linear transformations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#some-special-types-of-square-matrices">3.11. Some special types of square matrices</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matrix-diagonalization">3.12. Matrix diagonalization</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercises">3.13. Exercises</a></li>
 </ul>
             </nav>
         </div>
@@ -396,18 +397,18 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="mathematical-foundation-of-quantum-computing">
-<h1><span class="section-number">2. </span>Mathematical Foundation of Quantum Computing<a class="headerlink" href="#mathematical-foundation-of-quantum-computing" title="Permalink to this heading">#</a></h1>
+<h1><span class="section-number">3. </span>Mathematical Foundation of Quantum Computing<a class="headerlink" href="#mathematical-foundation-of-quantum-computing" title="Permalink to this heading">#</a></h1>
 <p><em>by Bernard Ramos</em></p>
 <section id="learning-objective">
-<h2><span class="section-number">2.1. </span>Learning objective<a class="headerlink" href="#learning-objective" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">3.1. </span>Learning objective<a class="headerlink" href="#learning-objective" title="Permalink to this heading">#</a></h2>
 <p>After succesfully completing this unit module, students should be able to understand and apply the working principles of linear algebra that are useful in quantum mechanics and quantum computing.</p>
 </section>
 <section id="prerequisite">
-<h2><span class="section-number">2.2. </span>Prerequisite<a class="headerlink" href="#prerequisite" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">3.2. </span>Prerequisite<a class="headerlink" href="#prerequisite" title="Permalink to this heading">#</a></h2>
 <p>This module is designed for independent study and students should be comfortable working with familiar concepts in high school linear algebra such as vectors, matrices, and the three-dimensional coordinate systems.</p>
 </section>
 <section id="course-content">
-<h2><span class="section-number">2.3. </span>Course content<a class="headerlink" href="#course-content" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">3.3. </span>Course content<a class="headerlink" href="#course-content" title="Permalink to this heading">#</a></h2>
 <p><span class="xref myst">Introduction</span>  | 
 <span class="xref myst">Vectors</span>  | 
 <span class="xref myst">Vector spaces</span>  | 
@@ -420,7 +421,7 @@ document.write(`
 <p><a id='Introduction'></a></p>
 </section>
 <section id="introduction">
-<h2><span class="section-number">2.4. </span>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">3.4. </span>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading">#</a></h2>
 <hr class="docutils" />
 <p>Quantum computing is a field of computer science that harnesses the principles of quantum mechanics to solve computational problems.</p>
 <p>Linear algebra is the mathematical framework of quantum mechanics—the study of the behavior of quantum states and their transformations.</p>
@@ -430,7 +431,7 @@ document.write(`
 <p><a id='Vectors'></a></p>
 </section>
 <section id="vectors">
-<h2><span class="section-number">2.5. </span>Vectors<a class="headerlink" href="#vectors" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">3.5. </span>Vectors<a class="headerlink" href="#vectors" title="Permalink to this heading">#</a></h2>
 <hr class="docutils" />
 <p>A <b>vector</b> is an ordered list of numbers. The numbers can be real numbers or complex numbers.</p>
 <p>In elementary mechanics, we defined a vector as a quantity that has magnitude and direction.</p>
@@ -455,7 +456,7 @@ document.write(`
 <p><a id='Vector_spaces'></a></p>
 </section>
 <section id="vector-spaces">
-<h2><span class="section-number">2.6. </span>Vector spaces<a class="headerlink" href="#vector-spaces" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">3.6. </span>Vector spaces<a class="headerlink" href="#vector-spaces" title="Permalink to this heading">#</a></h2>
 <hr class="docutils" />
 <p>A <b>vector space</b> <span class="math notranslate nohighlight">\(V\)</span> is a set of <b>vectors</b> <span class="math notranslate nohighlight">\(v\)</span> which can be added together and scaled by numbers <span class="math notranslate nohighlight">\(\alpha \in \mathbb{F}\)</span> called <b>scalars</b>.</p>
 <p>The set <span class="math notranslate nohighlight">\(\mathbb{F}\)</span> can be the set of the real numbers <span class="math notranslate nohighlight">\(\mathbb{R}\)</span> or the set of complex numbers <span class="math notranslate nohighlight">\(\mathbb{C}\)</span>.</p>
@@ -520,7 +521,7 @@ c
 <p><a id='Vector_subspaces'></a></p>
 </section>
 <section id="vector-subspaces">
-<h2><span class="section-number">2.7. </span>Vector subspaces<a class="headerlink" href="#vector-subspaces" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">3.7. </span>Vector subspaces<a class="headerlink" href="#vector-subspaces" title="Permalink to this heading">#</a></h2>
 <hr class="docutils" />
 <p>We will sometimes be interested in working with a subset <span class="math notranslate nohighlight">\(V'\)</span> of a vector space <span class="math notranslate nohighlight">\(V\)</span>. If this subset <span class="math notranslate nohighlight">\(V'\)</span> has a basis <span class="math notranslate nohighlight">\(B'\)</span>, then <span class="math notranslate nohighlight">\(V'\)</span> is a <b>vector subspace</b> of <span class="math notranslate nohighlight">\(V\)</span>.</p>
 <p><font color='#0066CC'><strong>Example 4.</strong></font> An example is the <span class="math notranslate nohighlight">\(xy\)</span>-Cartesian plane which is a subset of the three-dimensional Euclidean space. It is spanned by the basis</p>
@@ -553,7 +554,7 @@ b \begin{bmatrix}
 <p><a id='Inner_products'></a></p>
 </section>
 <section id="inner-products">
-<h2><span class="section-number">2.8. </span>Inner products<a class="headerlink" href="#inner-products" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">3.8. </span>Inner products<a class="headerlink" href="#inner-products" title="Permalink to this heading">#</a></h2>
 <hr class="docutils" />
 <p>If <span class="math notranslate nohighlight">\(\mathbb{F} = \mathbb{R}\)</span>, recall that we associate the dot product to the following form of matrix multiplication
 \begin{align*}
@@ -665,7 +666,7 @@ u^\dagger u &amp;= \begin{bmatrix} 1+i &amp; 2 &amp; -3i \end{bmatrix} \begin{bm
 <p><a id='Tensor_products'></a></p>
 </section>
 <section id="tensor-products">
-<h2><span class="section-number">2.9. </span>Tensor products<a class="headerlink" href="#tensor-products" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">3.9. </span>Tensor products<a class="headerlink" href="#tensor-products" title="Permalink to this heading">#</a></h2>
 <hr class="docutils" />
 <p>Another vector multiplication that is defined for any pair of column matrices is the <b>tensor product</b>. Consider two vectors <span class="math notranslate nohighlight">\(u_1 \in V_1\)</span> and <span class="math notranslate nohighlight">\(u_2 \in V_2\)</span></p>
 <div class="math notranslate nohighlight">
@@ -732,7 +733,7 @@ a_1a_2 \\ a_1b_2 \\ b_1a_2 \\ b_1b_2 \end{bmatrix}
 <p><a id='Linear_transformations'></a></p>
 </section>
 <section id="linear-transformations">
-<h2><span class="section-number">2.10. </span>Linear transformations<a class="headerlink" href="#linear-transformations" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">3.10. </span>Linear transformations<a class="headerlink" href="#linear-transformations" title="Permalink to this heading">#</a></h2>
 <hr class="docutils" />
 <p>A <b>linear transformation</b> between two vector spaces <span class="math notranslate nohighlight">\(V\)</span> and <span class="math notranslate nohighlight">\(W\)</span> is a map <span class="math notranslate nohighlight">\(T : V \to W\)</span> such that the following hold</p>
 <p>\begin{align*}
@@ -819,7 +820,7 @@ MP, \quad PM, \quad MM, \quad NN, \quad MP, \quad \text{or} \quad PN?
 <p><a id='Some_special_types_of_square_matrices'></a></p>
 </section>
 <section id="some-special-types-of-square-matrices">
-<h2><span class="section-number">2.11. </span>Some special types of square matrices<a class="headerlink" href="#some-special-types-of-square-matrices" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">3.11. </span>Some special types of square matrices<a class="headerlink" href="#some-special-types-of-square-matrices" title="Permalink to this heading">#</a></h2>
 <hr class="docutils" />
 <p>In quantum computing, we usually encounter <span class="math notranslate nohighlight">\(2 \times 2\)</span> matrices or the tensor product of <span class="math notranslate nohighlight">\(2 \times 2\)</span> matrices.</p>
 <p>The most common types of <span class="math notranslate nohighlight">\(2 \times 2\)</span> matrices we need in later chapters of this book are as follows.</p>
@@ -879,7 +880,7 @@ M
 <p><a id='Matrix diagonalization'></a></p>
 </section>
 <section id="matrix-diagonalization">
-<h2><span class="section-number">2.12. </span>Matrix diagonalization<a class="headerlink" href="#matrix-diagonalization" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">3.12. </span>Matrix diagonalization<a class="headerlink" href="#matrix-diagonalization" title="Permalink to this heading">#</a></h2>
 <hr class="docutils" />
 <p>A square matrix <span class="math notranslate nohighlight">\(D\)</span> is <b>diagonal</b> if all its entries are zero except those in the principal diagonal. The process of converting a square matrix <span class="math notranslate nohighlight">\(A\)</span> into a diagonal matrix <span class="math notranslate nohighlight">\(D\)</span> is called <b>matrix diagonalization</b>.</p>
 <p>The entries in the diagonal matrix <span class="math notranslate nohighlight">\(D\)</span> turns out to be the eigenvalues of the original matrix <span class="math notranslate nohighlight">\(A\)</span>.</p>
@@ -920,7 +921,7 @@ A = P^{-1} D P
 <p><a id='Exercises'></a></p>
 </section>
 <section id="exercises">
-<h2><span class="section-number">2.13. </span>Exercises<a class="headerlink" href="#exercises" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">3.13. </span>Exercises<a class="headerlink" href="#exercises" title="Permalink to this heading">#</a></h2>
 <hr class="docutils" />
 <p><font color='#0066CC'><strong>Exercise 1.</strong></font> Consider the vector space <span class="math notranslate nohighlight">\(\mathbb{R}^2\)</span>. Let its basis be</p>
 <div class="math notranslate nohighlight">
@@ -1055,7 +1056,7 @@ P = \begin{bmatrix} 1 &amp; 0.8 \\ 1 &amp; 7 \\ 0 &amp; 4 \end{bmatrix}.
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><span class="section-number">1. </span>Introduction to Classical Computing</p>
+        <p class="prev-next-title"><span class="section-number">2. </span>Introduction to Classical Computing</p>
       </div>
     </a>
     <a class="right-next"
@@ -1063,7 +1064,7 @@ P = \begin{bmatrix} 1 &amp; 0.8 \\ 1 &amp; 7 \\ 0 &amp; 4 \end{bmatrix}.
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">3. </span>Quantum Mechanics for Quantum Computing</p>
+        <p class="prev-next-title"><span class="section-number">4. </span>Quantum Mechanics for Quantum Computing</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -1082,19 +1083,19 @@ P = \begin{bmatrix} 1 &amp; 0.8 \\ 1 &amp; 7 \\ 0 &amp; 4 \end{bmatrix}.
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objective">2.1. Learning objective</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prerequisite">2.2. Prerequisite</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#course-content">2.3. Course content</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">2.4. Introduction</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vectors">2.5. Vectors</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vector-spaces">2.6. Vector spaces</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vector-subspaces">2.7. Vector subspaces</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#inner-products">2.8. Inner products</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tensor-products">2.9. Tensor products</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#linear-transformations">2.10. Linear transformations</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#some-special-types-of-square-matrices">2.11. Some special types of square matrices</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matrix-diagonalization">2.12. Matrix diagonalization</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercises">2.13. Exercises</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objective">3.1. Learning objective</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prerequisite">3.2. Prerequisite</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#course-content">3.3. Course content</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">3.4. Introduction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vectors">3.5. Vectors</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vector-spaces">3.6. Vector spaces</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vector-subspaces">3.7. Vector subspaces</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#inner-products">3.8. Inner products</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tensor-products">3.9. Tensor products</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#linear-transformations">3.10. Linear transformations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#some-special-types-of-square-matrices">3.11. Some special types of square matrices</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matrix-diagonalization">3.12. Matrix diagonalization</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercises">3.13. Exercises</a></li>
 </ul>
   </nav></div>
 

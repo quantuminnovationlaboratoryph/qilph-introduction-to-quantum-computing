@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>3. Quantum Mechanics for Quantum Computing &#8212; Introduction to Quantum Computing</title>
+    <title>4. Quantum Mechanics for Quantum Computing &#8212; Introduction to Quantum Computing</title>
   
   
   
@@ -67,8 +67,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'content/chapter-03/chapter-03';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="4. Introduction to Quantum Computing" href="../chapter-04/chapter-04.html" />
-    <link rel="prev" title="2. Mathematical Foundation of Quantum Computing" href="../chapter-02/chapter-02.html" />
+    <link rel="next" title="5. Introduction to Quantum Computing" href="../chapter-04/chapter-04.html" />
+    <link rel="prev" title="3. Mathematical Foundation of Quantum Computing" href="../chapter-02/chapter-02.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -170,14 +170,15 @@ const thebe_selector_output = ".output, .cell_output"
         </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Chapters</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../chapter-01/chapter-01.html">1. Introduction to Classical Computing</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../chapter-02/chapter-02.html">2. Mathematical Foundation of Quantum Computing</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">3. Quantum Mechanics for Quantum Computing</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../chapter-04/chapter-04.html">4. Introduction to Quantum Computing</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../chapter-05/chapter-05.html">5. Quantum Algorithms and Their Advantages Over Classical Counterparts</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../chapter-06/chapter-06.html">6. Software Programming for Quantum Computation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../chapter-07/chapter-07.html">7. COARE and ASTI’s Quantum Circuit Simulation Project</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../chapter-08/chapter-08.html">8. Current Use Cases for Quantum Computing in the Noisy Intermediate-Scale Quantum Era</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter-00/chapter-00.html">1. Quantum Computing: A Fast-Emerging Field and Its Potential Impact</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter-01/chapter-01.html">2. Introduction to Classical Computing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter-02/chapter-02.html">3. Mathematical Foundation of Quantum Computing</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">4. Quantum Mechanics for Quantum Computing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter-04/chapter-04.html">5. Introduction to Quantum Computing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter-05/chapter-05.html">6. Quantum Algorithms and Their Advantages Over Classical Counterparts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter-06/chapter-06.html">7. Software Programming for Quantum Computation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter-07/chapter-07.html">8. COARE and ASTI’s Quantum Circuit Simulation Project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter-08/chapter-08.html">9. Current Use Cases for Quantum Computing in the Noisy Intermediate-Scale Quantum Era</a></li>
 </ul>
 
     </div>
@@ -371,27 +372,27 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">3.1. Introduction</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#classical-bit">3.2. Classical Bit</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bit-strings">3.2.1. Bit Strings</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">4.1. Introduction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#classical-bit">4.2. Classical Bit</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bit-strings">4.2.1. Bit Strings</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quantum-bit-qubit">3.3. Quantum Bit (Qubit)</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#quantum-indeterminacy">3.3.1. Quantum Indeterminacy</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#superposition">3.3.2. Superposition</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#qubit-examples">3.3.3. Qubit Examples</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#born-rule">3.3.4. Born Rule</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#qubits-as-points-on-a-2d-plane-or-as-points-on-a-circle">3.3.5. Qubits as Points on a 2D Plane (or as Points on a Circle)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#operations-on-a-qubit">3.3.6. Operations on a Qubit</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#complex-amplitudes">3.3.7. Complex Amplitudes</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#qubits-as-points-in-3d-space-or-as-points-on-a-sphere">3.3.8. Qubits as Points in 3D Space (or as Points on a Sphere)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#qubits-as-vectors">3.3.9. Qubits as Vectors</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#qubits-as-binary-trees">3.3.10. Qubits as Binary Trees</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quantum-bit-qubit">4.3. Quantum Bit (Qubit)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#quantum-indeterminacy">4.3.1. Quantum Indeterminacy</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#superposition">4.3.2. Superposition</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#qubit-examples">4.3.3. Qubit Examples</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#born-rule">4.3.4. Born Rule</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#qubits-as-points-on-a-2d-plane-or-as-points-on-a-circle">4.3.5. Qubits as Points on a 2D Plane (or as Points on a Circle)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#operations-on-a-qubit">4.3.6. Operations on a Qubit</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#complex-amplitudes">4.3.7. Complex Amplitudes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#qubits-as-points-in-3d-space-or-as-points-on-a-sphere">4.3.8. Qubits as Points in 3D Space (or as Points on a Sphere)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#qubits-as-vectors">4.3.9. Qubits as Vectors</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#qubits-as-binary-trees">4.3.10. Qubits as Binary Trees</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quantum-states">3.4. Quantum States</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#entanglement-of-qubits">3.5. Entanglement of Qubits</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#complex-numbers-appendix">3.6. Complex Numbers (Appendix)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quantum-states">4.4. Quantum States</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#entanglement-of-qubits">4.5. Entanglement of Qubits</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#complex-numbers-appendix">4.6. Complex Numbers (Appendix)</a></li>
 </ul>
             </nav>
         </div>
@@ -405,13 +406,13 @@ document.write(`
                   
   <!------------------------------------------------------------------------------------------------->
 <section class="tex2jax_ignore mathjax_ignore" id="quantum-mechanics-for-quantum-computing">
-<h1><span class="section-number">3. </span>Quantum Mechanics for Quantum Computing<a class="headerlink" href="#quantum-mechanics-for-quantum-computing" title="Permalink to this heading">#</a></h1>
+<h1><span class="section-number">4. </span>Quantum Mechanics for Quantum Computing<a class="headerlink" href="#quantum-mechanics-for-quantum-computing" title="Permalink to this heading">#</a></h1>
 <p>Prepared by: <i> Ren Tristan A. de la Cruz</i> <br>
 Updated on:  <i> 2023 October 20</i></p>
 <!------------------------------------------------------------------------------------------------->
 <br>
 <section id="introduction">
-<h2><span class="section-number">3.1. </span>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">4.1. </span>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading">#</a></h2>
 <hr>
 <p>Computation is information processing. In classical computing, information is encoded into strings
 of bits called <i>bit strings</i>. Bit strings are the objects of computation in classical computing.
@@ -423,7 +424,7 @@ string is made up of multiple bits, a quantum state is made up of multiple <i>qu
 <br>
 </section>
 <section id="classical-bit">
-<h2><span class="section-number">3.2. </span>Classical Bit<a class="headerlink" href="#classical-bit" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">4.2. </span>Classical Bit<a class="headerlink" href="#classical-bit" title="Permalink to this heading">#</a></h2>
 <hr>
 <p>The <i> classical bit</i> is the smallest unit of information. It is the amount of information you
 gain when you received an answer to a <i> yes-or-no </i> question where it is equally likely for
@@ -443,7 +444,7 @@ a position/location on a punched card, is a two-state system where the two state
 many of these two-state ‘systems’ and thus stores multiple bits of information.</p>
 <!------------------------------------------------------------------------------------------------->
 <section id="bit-strings">
-<h3><span class="section-number">3.2.1. </span>Bit Strings<a class="headerlink" href="#bit-strings" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">4.2.1. </span>Bit Strings<a class="headerlink" href="#bit-strings" title="Permalink to this heading">#</a></h3>
 <p>To represent multiple bits of information, bits can be stringed together to form a <i>bit string</i>
 (also called <i>binary strings</i>). Bit strings are needed to represent states of a system with
 more than two states. For example, for a system that can be in one of four possible states  <span class="math notranslate nohighlight">\(  A, B,
@@ -479,7 +480,7 @@ any length excluding the empty string. The set  <span class="math notranslate no
 </section>
 </section>
 <section id="quantum-bit-qubit">
-<h2><span class="section-number">3.3. </span>Quantum Bit (Qubit)<a class="headerlink" href="#quantum-bit-qubit" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">4.3. </span>Quantum Bit (Qubit)<a class="headerlink" href="#quantum-bit-qubit" title="Permalink to this heading">#</a></h2>
 <hr>
 <p>If the classical bit is the information stored in a two-state classical system, then the
 <i> quantum bit (or qubit) </i> is the information stored in a <i>two-state quantum</i> system. In
@@ -494,7 +495,7 @@ these <i>ket</i> notations, you know you will be dealing with quantum states and
 states.</p>
 <!------------------------------------------------------------------------------------------------->
 <section id="quantum-indeterminacy">
-<h3><span class="section-number">3.3.1. </span>Quantum Indeterminacy<a class="headerlink" href="#quantum-indeterminacy" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">4.3.1. </span>Quantum Indeterminacy<a class="headerlink" href="#quantum-indeterminacy" title="Permalink to this heading">#</a></h3>
 <p>Similar to a two-state classical system, when a two-state quantum system is observed/measured it will
 either be in state  <span class="math notranslate nohighlight">\( \ket{A} \)</span>  or in state  <span class="math notranslate nohighlight">\( \ket{B} \)</span> , given the system basis is  <span class="math notranslate nohighlight">\( \{\ket{A}, 
 \ket{B}\} \)</span> . The quantum system has definite state when observed. But unlike a classical system,
@@ -539,13 +540,13 @@ definite observed state.
 <figure class="align-default" id="id1">
 <a class="reference internal image-reference" href="../../_images/quantum-indeterminacy.svg"><img alt="../../_images/quantum-indeterminacy.svg" src="../../_images/quantum-indeterminacy.svg" width="700px" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 3.1 </span><span class="caption-text">Quantum Indeterminacy</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 4.1 </span><span class="caption-text">Quantum Indeterminacy</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <!------------------------------------------------------------------------------------------------->
 </section>
 <section id="superposition">
-<h3><span class="section-number">3.3.2. </span>Superposition<a class="headerlink" href="#superposition" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">4.3.2. </span>Superposition<a class="headerlink" href="#superposition" title="Permalink to this heading">#</a></h3>
 <p>Knowing that a quantum system’s state can be indeterminate, we can ask the following questions:</p>
 <ul>
 <li> How does a qubit encode an indeterminate state?</li>
@@ -616,7 +617,7 @@ is observed.</p>
 <!------------------------------------------------------------------------------------------------->
 </section>
 <section id="qubit-examples">
-<h3><span class="section-number">3.3.3. </span>Qubit Examples<a class="headerlink" href="#qubit-examples" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">4.3.3. </span>Qubit Examples<a class="headerlink" href="#qubit-examples" title="Permalink to this heading">#</a></h3>
 <style>
 table, th, td {
   border: 1px solid black;
@@ -722,7 +723,7 @@ table, th, td {
 <!------------------------------------------------------------------------------------------------->
 </section>
 <section id="born-rule">
-<h3><span class="section-number">3.3.4. </span>Born Rule<a class="headerlink" href="#born-rule" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">4.3.4. </span>Born Rule<a class="headerlink" href="#born-rule" title="Permalink to this heading">#</a></h3>
 <p>For now, let us assume that the amplitudes,  <span class="math notranslate nohighlight">\( \alpha \)</span>  and  <span class="math notranslate nohighlight">\( \beta \)</span> , used in a qubit are real
 numbers. The amplitudes can not be just any real numbers. The qubit amplitudes have to observe the
 following rule known as the <a href="https://en.wikipedia.org/wiki/Born_rule"><b><i>Born Rule
@@ -743,7 +744,7 @@ probability rule  <span class="math notranslate nohighlight">\( p_0 + p_1 = 1 \)
 <!------------------------------------------------------------------------------------------------->
 </section>
 <section id="qubits-as-points-on-a-2d-plane-or-as-points-on-a-circle">
-<h3><span class="section-number">3.3.5. </span>Qubits as Points on a 2D Plane (or as Points on a Circle)<a class="headerlink" href="#qubits-as-points-on-a-2d-plane-or-as-points-on-a-circle" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">4.3.5. </span>Qubits as Points on a 2D Plane (or as Points on a Circle)<a class="headerlink" href="#qubits-as-points-on-a-2d-plane-or-as-points-on-a-circle" title="Permalink to this heading">#</a></h3>
 <p>A valid qubit  <span class="math notranslate nohighlight">\( \ket{\psi} = \alpha\ket{0} + \beta\ket{1} \)</span>  can be represented by the point
 <span class="math notranslate nohighlight">\( (\alpha, \beta) \)</span>  on the two-dimensional  <span class="math notranslate nohighlight">\( \alpha\beta \)</span> -plane. If you plot all points  <span class="math notranslate nohighlight">\( (\alpha, 
 \beta) \)</span>  that represent valid qubits that follow the Born rule, then the points will form a circle
@@ -763,7 +764,7 @@ a circle and not just part of the circle on the  <span class="math notranslate n
 <figure class="align-default" id="qs-circle">
 <a class="reference internal image-reference" href="../../_images/qs-circle.svg"><img alt="../../_images/qs-circle.svg" src="../../_images/qs-circle.svg" width="550px" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 3.2 </span><span class="caption-text">Using a Single Angle to Define Amplitudes</span><a class="headerlink" href="#qs-circle" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 4.2 </span><span class="caption-text">Using a Single Angle to Define Amplitudes</span><a class="headerlink" href="#qs-circle" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Any point  <span class="math notranslate nohighlight">\( (\alpha,\beta) \)</span>  on the plane can alternately be specified by its polar coordinate
@@ -911,7 +912,7 @@ The figure below shows the qubits as points (or as arrows).
 <figure class="align-default" id="qs-trig-circle">
 <a class="reference internal image-reference" href="../../_images/qs-trig-circle.svg"><img alt="../../_images/qs-trig-circle.svg" src="../../_images/qs-trig-circle.svg" width="700px" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 3.3 </span><span class="caption-text">Trigonometric Circle</span><a class="headerlink" href="#qs-trig-circle" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 4.3 </span><span class="caption-text">Trigonometric Circle</span><a class="headerlink" href="#qs-trig-circle" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Look at the qubit  <span class="math notranslate nohighlight">\( \ket{\psi_0} = \ket{0} \)</span>  when  <span class="math notranslate nohighlight">\( \theta=0 \)</span>  and the qubit  <span class="math notranslate nohighlight">\( \ket{\psi_{\pi}}= 
@@ -947,7 +948,7 @@ phases (‘directions’).</p>
 <!------------------------------------------------------------------------------------------------->
 </section>
 <section id="operations-on-a-qubit">
-<h3><span class="section-number">3.3.6. </span>Operations on a Qubit<a class="headerlink" href="#operations-on-a-qubit" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">4.3.6. </span>Operations on a Qubit<a class="headerlink" href="#operations-on-a-qubit" title="Permalink to this heading">#</a></h3>
 <p>In classical computing, when you are computing with bits, there are only two operations you can do
 with some bit  <span class="math notranslate nohighlight">\( b \)</span> , you either let it keep its value or flip the bit (change 0 to 1 or change 1
 to 0). In quantum computing, an operation on a qubit  <span class="math notranslate nohighlight">\( \ket{\psi} = \alpha\ket{0} + \beta\ket{1} \)</span><br />
@@ -982,7 +983,7 @@ follow the Born rule. i.e.  <span class="math notranslate nohighlight">\(  {(a')
 <figure class="align-default" id="quantum-ops-generic">
 <a class="reference internal image-reference" href="../../_images/quantum-ops-generic.svg"><img alt="../../_images/quantum-ops-generic.svg" src="../../_images/quantum-ops-generic.svg" width="500px" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 3.4 </span><span class="caption-text">Generic 1-qubit Operator</span><a class="headerlink" href="#quantum-ops-generic" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 4.4 </span><span class="caption-text">Generic 1-qubit Operator</span><a class="headerlink" href="#quantum-ops-generic" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <div class="math notranslate nohighlight">
@@ -1027,7 +1028,7 @@ NOT (bit flip) operator.</p>
 <figure class="align-default" id="quantum-ops-not">
 <a class="reference internal image-reference" href="../../_images/quantum-ops-not.svg"><img alt="../../_images/quantum-ops-not.svg" src="../../_images/quantum-ops-not.svg" width="600px" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 3.5 </span><span class="caption-text">Quantum NOT Operator as Reflection</span><a class="headerlink" href="#quantum-ops-not" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 4.5 </span><span class="caption-text">Quantum NOT Operator as Reflection</span><a class="headerlink" href="#quantum-ops-not" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p>The second example is the  <span class="math notranslate nohighlight">\( HADAMARD \)</span>  operator (or  <span class="math notranslate nohighlight">\( H \)</span>  operator for short). The  <span class="math notranslate nohighlight">\( H \)</span>  operator
@@ -1079,7 +1080,7 @@ state   <span class="math notranslate nohighlight">\( \ket{1} \)</span>  to the 
 <figure class="align-default" id="id2">
 <a class="reference internal image-reference" href="../../_images/quantum-ops-hadamard.svg"><img alt="../../_images/quantum-ops-hadamard.svg" src="../../_images/quantum-ops-hadamard.svg" width="600px" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 3.6 </span><span class="caption-text">Hadamard Operator as Reflection</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 4.6 </span><span class="caption-text">Hadamard Operator as Reflection</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <!--- 
@@ -1093,13 +1094,13 @@ state   <span class="math notranslate nohighlight">\( \ket{1} \)</span>  to the 
 <figure class="align-default" id="id3">
 <a class="reference internal image-reference" href="../../_images/quantum-ops-rotate.svg"><img alt="../../_images/quantum-ops-rotate.svg" src="../../_images/quantum-ops-rotate.svg" width="600px" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 3.7 </span><span class="caption-text">Right-angle Rotation Operator</span><a class="headerlink" href="#id3" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 4.7 </span><span class="caption-text">Right-angle Rotation Operator</span><a class="headerlink" href="#id3" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <!------------------------------------------------------------------------------------------------->
 </section>
 <section id="complex-amplitudes">
-<h3><span class="section-number">3.3.7. </span>Complex Amplitudes<a class="headerlink" href="#complex-amplitudes" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">4.3.7. </span>Complex Amplitudes<a class="headerlink" href="#complex-amplitudes" title="Permalink to this heading">#</a></h3>
 <div class="math notranslate nohighlight">
 \[
 \ket{\psi} = cos(\frac{\theta}{2})\ket{0} + e^{i\phi} sin(\frac{\theta}{2}) i \ket{1}
@@ -1107,7 +1108,7 @@ state   <span class="math notranslate nohighlight">\( \ket{1} \)</span>  to the 
 <!------------------------------------------------------------------------------------------------->
 </section>
 <section id="qubits-as-points-in-3d-space-or-as-points-on-a-sphere">
-<h3><span class="section-number">3.3.8. </span>Qubits as Points in 3D Space (or as Points on a Sphere)<a class="headerlink" href="#qubits-as-points-in-3d-space-or-as-points-on-a-sphere" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">4.3.8. </span>Qubits as Points in 3D Space (or as Points on a Sphere)<a class="headerlink" href="#qubits-as-points-in-3d-space-or-as-points-on-a-sphere" title="Permalink to this heading">#</a></h3>
 <!---
 <div align="center">
   <img   src="./figures/qs-blochsphere.svg" 
@@ -1119,13 +1120,13 @@ state   <span class="math notranslate nohighlight">\( \ket{1} \)</span>  to the 
 <figure class="align-default" id="id4">
 <a class="reference internal image-reference" href="../../_images/qs-blochsphere.svg"><img alt="../../_images/qs-blochsphere.svg" src="../../_images/qs-blochsphere.svg" width="600px" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 3.8 </span><span class="caption-text">Bloch Sphere</span><a class="headerlink" href="#id4" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 4.8 </span><span class="caption-text">Bloch Sphere</span><a class="headerlink" href="#id4" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <!------------------------------------------------------------------------------------------------->
 </section>
 <section id="qubits-as-vectors">
-<h3><span class="section-number">3.3.9. </span>Qubits as Vectors<a class="headerlink" href="#qubits-as-vectors" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">4.3.9. </span>Qubits as Vectors<a class="headerlink" href="#qubits-as-vectors" title="Permalink to this heading">#</a></h3>
 <p>The qubit  <span class="math notranslate nohighlight">\(  \ket{0}  \)</span>  can be represented by the column vector:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -1172,7 +1173,7 @@ vector:</p>
 <!------------------------------------------------------------------------------------------------->
 </section>
 <section id="qubits-as-binary-trees">
-<h3><span class="section-number">3.3.10. </span>Qubits as Binary Trees<a class="headerlink" href="#qubits-as-binary-trees" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">4.3.10. </span>Qubits as Binary Trees<a class="headerlink" href="#qubits-as-binary-trees" title="Permalink to this heading">#</a></h3>
 <p>Horizontal tree</p>
 <!---
 <div align="center">
@@ -1185,7 +1186,7 @@ vector:</p>
 <figure class="align-default" id="id5">
 <a class="reference internal image-reference" href="../../_images/qs-1qubit-htree.svg"><img alt="../../_images/qs-1qubit-htree.svg" src="../../_images/qs-1qubit-htree.svg" width="250px" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 3.9 </span><span class="caption-text">Qubit as a Horizontal Binary Tree</span><a class="headerlink" href="#id5" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 4.9 </span><span class="caption-text">Qubit as a Horizontal Binary Tree</span><a class="headerlink" href="#id5" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Vertical Tree</p>
@@ -1200,7 +1201,7 @@ vector:</p>
 <figure class="align-default" id="id6">
 <a class="reference internal image-reference" href="../../_images/qs-1qubit-vtree.svg"><img alt="../../_images/qs-1qubit-vtree.svg" src="../../_images/qs-1qubit-vtree.svg" width="300px" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 3.10 </span><span class="caption-text">Qubit as a Vertical Binary Tree</span><a class="headerlink" href="#id6" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 4.10 </span><span class="caption-text">Qubit as a Vertical Binary Tree</span><a class="headerlink" href="#id6" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <!------------------------------------------------------------------------------------------------->
@@ -1208,7 +1209,7 @@ vector:</p>
 </section>
 </section>
 <section id="quantum-states">
-<h2><span class="section-number">3.4. </span>Quantum States<a class="headerlink" href="#quantum-states" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">4.4. </span>Quantum States<a class="headerlink" href="#quantum-states" title="Permalink to this heading">#</a></h2>
 <hr>
 <p>Horizontal Tree</p>
 <!---
@@ -1222,7 +1223,7 @@ vector:</p>
 <figure class="align-default" id="id7">
 <a class="reference internal image-reference" href="../../_images/qs-2qubit-htree.svg"><img alt="../../_images/qs-2qubit-htree.svg" src="../../_images/qs-2qubit-htree.svg" width="400px" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 3.11 </span><span class="caption-text">2-qubit State as a Horizontal Binary Treet</span><a class="headerlink" href="#id7" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 4.11 </span><span class="caption-text">2-qubit State as a Horizontal Binary Treet</span><a class="headerlink" href="#id7" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Vertical Binary Tree</p>
@@ -1237,7 +1238,7 @@ vector:</p>
 <figure class="align-default" id="id8">
 <a class="reference internal image-reference" href="../../_images/qs-2qubit-vtree.svg"><img alt="../../_images/qs-2qubit-vtree.svg" src="../../_images/qs-2qubit-vtree.svg" width="450px" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 3.12 </span><span class="caption-text">2-qubit State as a Vertical Binary Treet</span><a class="headerlink" href="#id8" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 4.12 </span><span class="caption-text">2-qubit State as a Vertical Binary Treet</span><a class="headerlink" href="#id8" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <br>
@@ -1317,7 +1318,7 @@ vector:</p>
 <br>
 </section>
 <section id="entanglement-of-qubits">
-<h2><span class="section-number">3.5. </span>Entanglement of Qubits<a class="headerlink" href="#entanglement-of-qubits" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">4.5. </span>Entanglement of Qubits<a class="headerlink" href="#entanglement-of-qubits" title="Permalink to this heading">#</a></h2>
 <hr>
 <p>Non-entangled 3-qubit state:</p>
 <!---
@@ -1332,7 +1333,7 @@ vector:</p>
 <figure class="align-default" id="id9">
 <a class="reference internal image-reference" href="../../_images/qs-3qubit-non-entangled.svg"><img alt="../../_images/qs-3qubit-non-entangled.svg" src="../../_images/qs-3qubit-non-entangled.svg" width="700px" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 3.13 </span><span class="caption-text">Non-entangled 3-qubit State</span><a class="headerlink" href="#id9" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 4.13 </span><span class="caption-text">Non-entangled 3-qubit State</span><a class="headerlink" href="#id9" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Entanglement  <span class="math notranslate nohighlight">\( q_1 = q_3 \)</span> :</p>
@@ -1348,7 +1349,7 @@ vector:</p>
 <figure class="align-default" id="id10">
 <a class="reference internal image-reference" href="../../_images/qs-3qubit-q1-eq-q3.svg"><img alt="../../_images/qs-3qubit-q1-eq-q3.svg" src="../../_images/qs-3qubit-q1-eq-q3.svg" width="700px" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 3.14 </span><span class="caption-text">3-qubit State with Entanglement <span class="math notranslate nohighlight">\(q_1 = q_3\)</span></span><a class="headerlink" href="#id10" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 4.14 </span><span class="caption-text">3-qubit State with Entanglement <span class="math notranslate nohighlight">\(q_1 = q_3\)</span></span><a class="headerlink" href="#id10" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Entanglement  <span class="math notranslate nohighlight">\( q_1 \neq q_2 \)</span> :</p>
@@ -1364,7 +1365,7 @@ vector:</p>
 <figure class="align-default" id="id11">
 <a class="reference internal image-reference" href="../../_images/qs-3qubit-q1-neq-q2.svg"><img alt="../../_images/qs-3qubit-q1-neq-q2.svg" src="../../_images/qs-3qubit-q1-neq-q2.svg" width="700px" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 3.15 </span><span class="caption-text">3-qubit State with Entanglement <span class="math notranslate nohighlight">\(q_1 \neq q_2\)</span></span><a class="headerlink" href="#id11" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 4.15 </span><span class="caption-text">3-qubit State with Entanglement <span class="math notranslate nohighlight">\(q_1 \neq q_2\)</span></span><a class="headerlink" href="#id11" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Entanglement  <span class="math notranslate nohighlight">\( q_1 = q_2 = q_3 \)</span> :</p>
@@ -1380,13 +1381,13 @@ vector:</p>
 <figure class="align-default" id="id12">
 <a class="reference internal image-reference" href="../../_images/qs-3qubit-eq-q123.svg"><img alt="../../_images/qs-3qubit-eq-q123.svg" src="../../_images/qs-3qubit-eq-q123.svg" width="700px" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 3.16 </span><span class="caption-text">3-qubit State with Entanglement <span class="math notranslate nohighlight">\(q_1 = q_2 = q_3\)</span></span><a class="headerlink" href="#id12" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 4.16 </span><span class="caption-text">3-qubit State with Entanglement <span class="math notranslate nohighlight">\(q_1 = q_2 = q_3\)</span></span><a class="headerlink" href="#id12" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <!------------------------------------------------------------------------------------------------->
 </section>
 <section id="complex-numbers-appendix">
-<h2><span class="section-number">3.6. </span>Complex Numbers (Appendix)<a class="headerlink" href="#complex-numbers-appendix" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">4.6. </span>Complex Numbers (Appendix)<a class="headerlink" href="#complex-numbers-appendix" title="Permalink to this heading">#</a></h2>
 <hr>
 <p>The set  <span class="math notranslate nohighlight">\( \mathbb{C} \)</span>  of <i>complex numbers</i> is an extension of the set  <span class="math notranslate nohighlight">\( \mathbb{R} \)</span>  of
 <i>real</i> numbers. A complex number  <span class="math notranslate nohighlight">\( z \)</span>  has the form:</p>
@@ -1413,7 +1414,7 @@ plane.</p>
 <figure class="align-default" id="id13">
 <a class="reference internal image-reference" href="../../_images/comp-argand.svg"><img alt="../../_images/comp-argand.svg" src="../../_images/comp-argand.svg" width="450px" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 3.17 </span><span class="caption-text">Argand Plane</span><a class="headerlink" href="#id13" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 4.17 </span><span class="caption-text">Argand Plane</span><a class="headerlink" href="#id13" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p>The <i>modulus</i> (or <i>absolute value</i>) of the complex number  <span class="math notranslate nohighlight">\( z = a + bi \)</span>  is the real
@@ -1464,7 +1465,7 @@ r\cdot sin(\theta))  \)</span> .</p>
 <figure class="align-default" id="id14">
 <a class="reference internal image-reference" href="../../_images/comp-polar.svg"><img alt="../../_images/comp-polar.svg" src="../../_images/comp-polar.svg" width="550px" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 3.18 </span><span class="caption-text">Polar Coordinates</span><a class="headerlink" href="#id14" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 4.18 </span><span class="caption-text">Polar Coordinates</span><a class="headerlink" href="#id14" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p>The polar coordinate of a point representing a complex number is useful because it can be use to
@@ -1533,7 +1534,7 @@ z &amp;= a+bi\\
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><span class="section-number">2. </span>Mathematical Foundation of Quantum Computing</p>
+        <p class="prev-next-title"><span class="section-number">3. </span>Mathematical Foundation of Quantum Computing</p>
       </div>
     </a>
     <a class="right-next"
@@ -1541,7 +1542,7 @@ z &amp;= a+bi\\
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">4. </span>Introduction to Quantum Computing</p>
+        <p class="prev-next-title"><span class="section-number">5. </span>Introduction to Quantum Computing</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -1560,27 +1561,27 @@ z &amp;= a+bi\\
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">3.1. Introduction</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#classical-bit">3.2. Classical Bit</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bit-strings">3.2.1. Bit Strings</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">4.1. Introduction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#classical-bit">4.2. Classical Bit</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bit-strings">4.2.1. Bit Strings</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quantum-bit-qubit">3.3. Quantum Bit (Qubit)</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#quantum-indeterminacy">3.3.1. Quantum Indeterminacy</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#superposition">3.3.2. Superposition</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#qubit-examples">3.3.3. Qubit Examples</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#born-rule">3.3.4. Born Rule</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#qubits-as-points-on-a-2d-plane-or-as-points-on-a-circle">3.3.5. Qubits as Points on a 2D Plane (or as Points on a Circle)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#operations-on-a-qubit">3.3.6. Operations on a Qubit</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#complex-amplitudes">3.3.7. Complex Amplitudes</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#qubits-as-points-in-3d-space-or-as-points-on-a-sphere">3.3.8. Qubits as Points in 3D Space (or as Points on a Sphere)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#qubits-as-vectors">3.3.9. Qubits as Vectors</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#qubits-as-binary-trees">3.3.10. Qubits as Binary Trees</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quantum-bit-qubit">4.3. Quantum Bit (Qubit)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#quantum-indeterminacy">4.3.1. Quantum Indeterminacy</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#superposition">4.3.2. Superposition</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#qubit-examples">4.3.3. Qubit Examples</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#born-rule">4.3.4. Born Rule</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#qubits-as-points-on-a-2d-plane-or-as-points-on-a-circle">4.3.5. Qubits as Points on a 2D Plane (or as Points on a Circle)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#operations-on-a-qubit">4.3.6. Operations on a Qubit</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#complex-amplitudes">4.3.7. Complex Amplitudes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#qubits-as-points-in-3d-space-or-as-points-on-a-sphere">4.3.8. Qubits as Points in 3D Space (or as Points on a Sphere)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#qubits-as-vectors">4.3.9. Qubits as Vectors</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#qubits-as-binary-trees">4.3.10. Qubits as Binary Trees</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quantum-states">3.4. Quantum States</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#entanglement-of-qubits">3.5. Entanglement of Qubits</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#complex-numbers-appendix">3.6. Complex Numbers (Appendix)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quantum-states">4.4. Quantum States</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#entanglement-of-qubits">4.5. Entanglement of Qubits</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#complex-numbers-appendix">4.6. Complex Numbers (Appendix)</a></li>
 </ul>
   </nav></div>
 
