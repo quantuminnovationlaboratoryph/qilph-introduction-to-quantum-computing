@@ -11,6 +11,8 @@ Updated on:  <i> 2023 November 03</i>
 
 ```
 
+Presentation: <a href="https://github.com/quantuminnovationlaboratoryph/qilph-introduction-to-quantum-computing/blob/main/content/chapter-03/extra/chapter-03.pdf"> Slides </a>
+
 <!------------------------------------------------------------------------------------------------->
 <br>
 
