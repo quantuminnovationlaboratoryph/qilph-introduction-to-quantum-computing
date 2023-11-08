@@ -356,9 +356,9 @@ table, th, td {
 |---|---|---|---|---|
   |  $  \ket{\psi_1}  = 1 \ket{0} + 0 \ket{1} = \ket{0}  $  | 1 | 0 |  $ 1^2 = 1$  |  $0^2 = 0 $ | 
 | $  \ket{\psi_2}  = 0 \ket{0} + 1 \ket{1} = \ket{1}  $ | 0 | 1 |  $0^2 = 0 $ |  $1 ^2 = 1 $  |
-| $  \ket{\psi_3}  = \frac{1}{\sqrt{2}} \ket{0} + \frac{1}{\sqrt{2}}  \ket{1}  $  |  $  \frac{1}{\sqrt{2}}  $ | $  \frac{1}{\sqrt{2}}  $ | $  \frac{1}{\sqrt{2}}^2 =  \frac{1}{2}  $ | $  \frac{1}{\sqrt{2}}^2 =  \frac{1}{2}  $  |
-| $  \ket{\psi_4}  = \frac{1}{\sqrt{4}} \ket{0} + \frac{\sqrt{3}}{\sqrt{4}}  \ket{1}  $ |  $  \frac{1}{\sqrt{4}}  $ |$  \frac{\sqrt{3}}{\sqrt{4}}  $ | $  \frac{1}{\sqrt{4}}^2 =  \frac{1}{4}  $  |  $  \frac{\sqrt{3}}{\sqrt{4}}^2 =  \frac{3}{4}  $  |
-| $  \ket{\psi_5}  = \frac{\sqrt{5}}{\sqrt{8}} \ket{0} + \frac{\sqrt{3}}{\sqrt{8}}  \ket{1} $ | $  \frac{\sqrt{5}}{\sqrt{8}}  $ | $  \frac{\sqrt{3}}{\sqrt{8}}  $ | $  \frac{\sqrt{5}}{\sqrt{8}}^2 =  \frac{5}{8}  $ |  $\left(\frac{\sqrt{3}}{\sqrt{8}}\right)^2 =  \frac{3}{8}  $ |
+| $  \ket{\psi_3}  = \frac{1}{\sqrt{2}} \ket{0} + \frac{1}{\sqrt{2}}  \ket{1}  $  |  $  \frac{1}{\sqrt{2}}  $ | $  \frac{1}{\sqrt{2}}  $ | $  \left(\frac{1}{\sqrt{2}}\right)^2 =  \frac{1}{2}  $ | $  \left(\frac{1}{\sqrt{2}}\right)^2 =  \frac{1}{2}  $  |
+| $  \ket{\psi_4}  = \frac{1}{\sqrt{4}} \ket{0} + \frac{\sqrt{3}}{\sqrt{4}}  \ket{1}  $ |  $  \frac{1}{\sqrt{4}}  $ |$  \frac{\sqrt{3}}{\sqrt{4}}  $ | $  \left(\frac{1}{\sqrt{4}}\right)^2 =  \frac{1}{4}  $  |  $  \left(\frac{\sqrt{3}}{\sqrt{4}}\right)^2 =  \frac{3}{4}  $  |
+| $  \ket{\psi_5}  = \frac{\sqrt{5}}{\sqrt{8}} \ket{0} + \frac{\sqrt{3}}{\sqrt{8}}  \ket{1} $ | $  \frac{\sqrt{5}}{\sqrt{8}}  $ | $  \frac{\sqrt{3}}{\sqrt{8}}  $ | $  \left(\frac{\sqrt{5}}{\sqrt{8}}\right)^2 =  \frac{5}{8}  $ |  $\left(\frac{\sqrt{3}}{\sqrt{8}}\right)^2 =  \frac{3}{8}  $ |
 
 
 <!------------------------------------------------------------------------------------------------->
