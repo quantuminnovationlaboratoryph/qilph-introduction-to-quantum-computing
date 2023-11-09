@@ -1,8 +1,8 @@
 <!------------------------------------------------------------------------------------------------->
 
-# Quantum Mechanics for Quantum Computing  
+# Quantum States for Quantum Computing  
 Prepared by: <i> Ren Tristan A. de la Cruz</i> <br>
-Updated on:  <i> 2023 November 03</i>
+Updated on:  <i> 2023 November 09</i>
 
 <!------------------------------------------------------------------------------------------------->
 <br>
