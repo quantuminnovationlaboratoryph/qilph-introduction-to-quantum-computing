@@ -766,7 +766,7 @@ Right-angle Rotation Operator
 ###  Complex Amplitudes
 
 $$
-\ket{\psi} = cos(\frac{\theta}{2})\ket{0} + e^{i\phi} sin(\frac{\theta}{2}) i \ket{1}
+\ket{\psi} = cos\left(\frac{\theta}{2}\right)\ket{0} + e^{i\varphi} sin\left(\frac{\theta}{2}\right) \ket{1}
 $$
 
 <!------------------------------------------------------------------------------------------------->
