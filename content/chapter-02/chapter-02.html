@@ -397,20 +397,40 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="linear-algebra-for-quantum-computing">
-<h1><span class="section-number">3. </span>Linear Algebra for Quantum Computing<a class="headerlink" href="#linear-algebra-for-quantum-computing" title="Permalink to this heading">#</a></h1>
+<h1><a class="toc-backref" href="#id1" role="doc-backlink"><span class="section-number">3. </span>Linear Algebra for Quantum Computing</a><a class="headerlink" href="#linear-algebra-for-quantum-computing" title="Permalink to this heading">#</a></h1>
 <p><em>by Bernard Ramos</em></p>
-<p><code class="docutils literal notranslate"><span class="pre">{content}</span></code></p>
+<nav class="contents" id="contents">
+<p class="topic-title">Contents</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#linear-algebra-for-quantum-computing" id="id1">Linear Algebra for Quantum Computing</a></p>
+<ul>
+<li><p><a class="reference internal" href="#learning-objective" id="id2">Learning objective</a></p></li>
+<li><p><a class="reference internal" href="#prerequisite" id="id3">Prerequisite</a></p></li>
+<li><p><a class="reference internal" href="#introduction" id="id4">Introduction</a></p></li>
+<li><p><a class="reference internal" href="#vectors" id="id5">Vectors</a></p></li>
+<li><p><a class="reference internal" href="#vector-spaces" id="id6">Vector spaces</a></p></li>
+<li><p><a class="reference internal" href="#vector-subspaces" id="id7">Vector subspaces</a></p></li>
+<li><p><a class="reference internal" href="#inner-products" id="id8">Inner products</a></p></li>
+<li><p><a class="reference internal" href="#tensor-products" id="id9">Tensor products</a></p></li>
+<li><p><a class="reference internal" href="#linear-transformations" id="id10">Linear transformations</a></p></li>
+<li><p><a class="reference internal" href="#some-special-types-of-square-matrices" id="id11">Some special types of square matrices</a></p></li>
+<li><p><a class="reference internal" href="#matrix-diagonalization" id="id12">Matrix diagonalization</a></p></li>
+<li><p><a class="reference internal" href="#exercises" id="id13">Exercises</a></p></li>
+</ul>
+</li>
+</ul>
+</nav>
 <section id="learning-objective">
-<h2><span class="section-number">3.1. </span>Learning objective<a class="headerlink" href="#learning-objective" title="Permalink to this heading">#</a></h2>
+<h2><a class="toc-backref" href="#id2" role="doc-backlink"><span class="section-number">3.1. </span>Learning objective</a><a class="headerlink" href="#learning-objective" title="Permalink to this heading">#</a></h2>
 <p>After succesfully completing this unit module, students should be able to understand and apply the working principles of linear algebra that are useful in quantum mechanics and quantum computing.</p>
 </section>
 <section id="prerequisite">
-<h2><span class="section-number">3.2. </span>Prerequisite<a class="headerlink" href="#prerequisite" title="Permalink to this heading">#</a></h2>
+<h2><a class="toc-backref" href="#id3" role="doc-backlink"><span class="section-number">3.2. </span>Prerequisite</a><a class="headerlink" href="#prerequisite" title="Permalink to this heading">#</a></h2>
 <p>This module is designed for independent study and students should be comfortable working with familiar concepts in high school linear algebra such as vectors, matrices, and the three-dimensional coordinate systems.</p>
 <p><a id='Introduction'></a></p>
 </section>
 <section id="introduction">
-<h2><span class="section-number">3.3. </span>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading">#</a></h2>
+<h2><a class="toc-backref" href="#id4" role="doc-backlink"><span class="section-number">3.3. </span>Introduction</a><a class="headerlink" href="#introduction" title="Permalink to this heading">#</a></h2>
 <hr class="docutils" />
 <p>Quantum computing is a field of computer science that harnesses the principles of quantum mechanics to solve computational problems.</p>
 <p>Linear algebra is the mathematical framework of quantum mechanics—the study of the behavior of quantum states and their transformations.</p>
@@ -420,7 +440,7 @@ document.write(`
 <p><a id='Vectors'></a></p>
 </section>
 <section id="vectors">
-<h2><span class="section-number">3.4. </span>Vectors<a class="headerlink" href="#vectors" title="Permalink to this heading">#</a></h2>
+<h2><a class="toc-backref" href="#id5" role="doc-backlink"><span class="section-number">3.4. </span>Vectors</a><a class="headerlink" href="#vectors" title="Permalink to this heading">#</a></h2>
 <hr class="docutils" />
 <p>A <b>vector</b> is an ordered list of numbers. The numbers can be real numbers or complex numbers.</p>
 <p>In elementary mechanics, we defined a vector as a quantity that has magnitude and direction.</p>
@@ -445,7 +465,7 @@ document.write(`
 <p><a id='Vector_spaces'></a></p>
 </section>
 <section id="vector-spaces">
-<h2><span class="section-number">3.5. </span>Vector spaces<a class="headerlink" href="#vector-spaces" title="Permalink to this heading">#</a></h2>
+<h2><a class="toc-backref" href="#id6" role="doc-backlink"><span class="section-number">3.5. </span>Vector spaces</a><a class="headerlink" href="#vector-spaces" title="Permalink to this heading">#</a></h2>
 <hr class="docutils" />
 <p>A <b>vector space</b> <span class="math notranslate nohighlight">\(V\)</span> is a set of <b>vectors</b> <span class="math notranslate nohighlight">\(v\)</span> which can be added together and scaled by numbers <span class="math notranslate nohighlight">\(\alpha \in \mathbb{F}\)</span> called <b>scalars</b>.</p>
 <p>The set <span class="math notranslate nohighlight">\(\mathbb{F}\)</span> can be the set of the real numbers <span class="math notranslate nohighlight">\(\mathbb{R}\)</span> or the set of complex numbers <span class="math notranslate nohighlight">\(\mathbb{C}\)</span>.</p>
@@ -510,7 +530,7 @@ c
 <p><a id='Vector_subspaces'></a></p>
 </section>
 <section id="vector-subspaces">
-<h2><span class="section-number">3.6. </span>Vector subspaces<a class="headerlink" href="#vector-subspaces" title="Permalink to this heading">#</a></h2>
+<h2><a class="toc-backref" href="#id7" role="doc-backlink"><span class="section-number">3.6. </span>Vector subspaces</a><a class="headerlink" href="#vector-subspaces" title="Permalink to this heading">#</a></h2>
 <hr class="docutils" />
 <p>We will sometimes be interested in working with a subset <span class="math notranslate nohighlight">\(V'\)</span> of a vector space <span class="math notranslate nohighlight">\(V\)</span>. If this subset <span class="math notranslate nohighlight">\(V'\)</span> has a basis <span class="math notranslate nohighlight">\(B'\)</span>, then <span class="math notranslate nohighlight">\(V'\)</span> is a <b>vector subspace</b> of <span class="math notranslate nohighlight">\(V\)</span>.</p>
 <p><font color='#0066CC'><strong>Example 4.</strong></font> An example is the <span class="math notranslate nohighlight">\(xy\)</span>-Cartesian plane which is a subset of the three-dimensional Euclidean space. It is spanned by the basis</p>
@@ -543,7 +563,7 @@ b \begin{bmatrix}
 <p><a id='Inner_products'></a></p>
 </section>
 <section id="inner-products">
-<h2><span class="section-number">3.7. </span>Inner products<a class="headerlink" href="#inner-products" title="Permalink to this heading">#</a></h2>
+<h2><a class="toc-backref" href="#id8" role="doc-backlink"><span class="section-number">3.7. </span>Inner products</a><a class="headerlink" href="#inner-products" title="Permalink to this heading">#</a></h2>
 <hr class="docutils" />
 <p>If <span class="math notranslate nohighlight">\(\mathbb{F} = \mathbb{R}\)</span>, recall that we associate the dot product to the following form of matrix multiplication</p>
 <div class="math notranslate nohighlight">
@@ -661,7 +681,7 @@ u^\dagger u &amp;= \begin{bmatrix} 1+i &amp; 2 &amp; -3i \end{bmatrix} \begin{bm
 <p><a id='Tensor_products'></a></p>
 </section>
 <section id="tensor-products">
-<h2><span class="section-number">3.8. </span>Tensor products<a class="headerlink" href="#tensor-products" title="Permalink to this heading">#</a></h2>
+<h2><a class="toc-backref" href="#id9" role="doc-backlink"><span class="section-number">3.8. </span>Tensor products</a><a class="headerlink" href="#tensor-products" title="Permalink to this heading">#</a></h2>
 <hr class="docutils" />
 <p>Another vector multiplication that is defined for any pair of column matrices is the <b>tensor product</b>. Consider two vectors <span class="math notranslate nohighlight">\(u_1 \in V_1\)</span> and <span class="math notranslate nohighlight">\(u_2 \in V_2\)</span></p>
 <div class="math notranslate nohighlight">
@@ -740,7 +760,7 @@ a_1a_2 \\ a_1b_2 \\ b_1a_2 \\ b_1b_2 \end{bmatrix}
 <p><a id='Linear_transformations'></a></p>
 </section>
 <section id="linear-transformations">
-<h2><span class="section-number">3.9. </span>Linear transformations<a class="headerlink" href="#linear-transformations" title="Permalink to this heading">#</a></h2>
+<h2><a class="toc-backref" href="#id10" role="doc-backlink"><span class="section-number">3.9. </span>Linear transformations</a><a class="headerlink" href="#linear-transformations" title="Permalink to this heading">#</a></h2>
 <hr class="docutils" />
 <p>A <b>linear transformation</b> between two vector spaces <span class="math notranslate nohighlight">\(V\)</span> and <span class="math notranslate nohighlight">\(W\)</span> is a map <span class="math notranslate nohighlight">\(T : V \to W\)</span> such that the following hold</p>
 <div class="math notranslate nohighlight">
@@ -865,7 +885,7 @@ H v = \frac{1}{\sqrt{2}}
 <p><a id='Some_special_types_of_square_matrices'></a></p>
 </section>
 <section id="some-special-types-of-square-matrices">
-<h2><span class="section-number">3.10. </span>Some special types of square matrices<a class="headerlink" href="#some-special-types-of-square-matrices" title="Permalink to this heading">#</a></h2>
+<h2><a class="toc-backref" href="#id11" role="doc-backlink"><span class="section-number">3.10. </span>Some special types of square matrices</a><a class="headerlink" href="#some-special-types-of-square-matrices" title="Permalink to this heading">#</a></h2>
 <hr class="docutils" />
 <p>In quantum computing, we usually encounter <span class="math notranslate nohighlight">\(2 \times 2\)</span> matrices or the tensor product of <span class="math notranslate nohighlight">\(2 \times 2\)</span> matrices. They are useful in representing single qubit quantum gates.</p>
 <p>The most common types of <span class="math notranslate nohighlight">\(2 \times 2\)</span> matrices we need in later chapters of this book are as follows.</p>
@@ -938,7 +958,7 @@ M^{-1} M  &amp;=
 <p><a id='Matrix diagonalization'></a></p>
 </section>
 <section id="matrix-diagonalization">
-<h2><span class="section-number">3.11. </span>Matrix diagonalization<a class="headerlink" href="#matrix-diagonalization" title="Permalink to this heading">#</a></h2>
+<h2><a class="toc-backref" href="#id12" role="doc-backlink"><span class="section-number">3.11. </span>Matrix diagonalization</a><a class="headerlink" href="#matrix-diagonalization" title="Permalink to this heading">#</a></h2>
 <hr class="docutils" />
 <p>A square matrix <span class="math notranslate nohighlight">\(D\)</span> is <b>diagonal</b> if all its entries are zero except those in the principal diagonal. The process of converting a square matrix <span class="math notranslate nohighlight">\(A\)</span> into a diagonal matrix <span class="math notranslate nohighlight">\(D\)</span> is called <b>matrix diagonalization</b>.</p>
 <p>The entries in the diagonal matrix <span class="math notranslate nohighlight">\(D\)</span> turns out to be the eigenvalues of the original matrix <span class="math notranslate nohighlight">\(A\)</span>.</p>
@@ -982,7 +1002,7 @@ A = P^{-1} D P
 <p><a id='Exercises'></a></p>
 </section>
 <section id="exercises">
-<h2><span class="section-number">3.12. </span>Exercises<a class="headerlink" href="#exercises" title="Permalink to this heading">#</a></h2>
+<h2><a class="toc-backref" href="#id13" role="doc-backlink"><span class="section-number">3.12. </span>Exercises</a><a class="headerlink" href="#exercises" title="Permalink to this heading">#</a></h2>
 <hr class="docutils" />
 <p><font color='#0066CC'><strong>Exercise 1.</strong></font> Consider the vector space <span class="math notranslate nohighlight">\(\mathbb{R}^2\)</span>. Let its basis be</p>
 <div class="math notranslate nohighlight">
