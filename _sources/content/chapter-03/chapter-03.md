@@ -2,7 +2,7 @@
 
 # Quantum States for Quantum Computing  
 Prepared by: <i> Ren Tristan A. de la Cruz</i> <br>
-Updated on:  <i> 2023 November 09</i>
+Updated on:  <i> 2023 November 10</i>
 
 <!------------------------------------------------------------------------------------------------->
 <br>
